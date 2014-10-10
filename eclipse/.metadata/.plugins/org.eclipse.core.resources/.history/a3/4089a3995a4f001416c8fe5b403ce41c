@@ -1,0 +1,59 @@
+package io.github.jwolff52.cakemod.init;
+
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishAxe;
+import io.github.jwolff52.cakemod.item.tools.pufferfish.ItemPufferfishHoe;
+import io.github.jwolff52.cakemod.item.tools.pufferfish.ItemPufferfishPickaxe;
+import io.github.jwolff52.cakemod.item.tools.pufferfish.ItemPufferfishSpade;
+import io.github.jwolff52.cakemod.item.tools.pufferfish.ItemPufferfishSword;
+import io.github.jwolff52.cakemod.item.tools.salmon.ItemSalmonAxe;
+import io.github.jwolff52.cakemod.item.tools.salmon.ItemSalmonHoe;
+import io.github.jwolff52.cakemod.item.tools.salmon.ItemSalmonPickaxe;
+import io.github.jwolff52.cakemod.item.tools.salmon.ItemSalmonSpade;
+import io.github.jwolff52.cakemod.item.tools.salmon.ItemSalmonSword;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemSword;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemSword fishSword=new ItemFishSword();
+	public static final ItemPickaxe fishPickaxe=new ItemFishPickaxe();
+	public static final ItemAxe fishAxe=new ItemFishAxe();
+	public static final ItemSpade fishSpade=new ItemFishSpade();
+	public static final ItemHoe fishHoe=new ItemFishHoe();
+	
+	public static final ItemSword salmonSword=new ItemSalmonSword();
+	public static final ItemPickaxe salmonPickaxe=new ItemSalmonPickaxe();
+	public static final ItemAxe salmonAxe=new ItemSalmonAxe();
+	public static final ItemSpade salmonSpade=new ItemSalmonSpade();
+	public static final ItemHoe salmonHoe=new ItemSalmonHoe();
+	
+	public static final ItemSword pufferfishSword=new ItemPufferfishSword();
+	public static final ItemPickaxe pufferfishPickaxe=new ItemPufferfishPickaxe();
+	public static final ItemAxe pufferfishAxe=new ItemFishAxe();
+	public static final ItemSpade pufferfishSpade=new ItemPufferfishSpade();
+	public static final ItemHoe pufferfishHoe=new ItemPufferfishHoe();
+	
+	public static void init(){
+		GameRegistry.registerItem(fishSword, "fish_sword");
+		GameRegistry.registerItem(fishPickaxe, "fish_pickaxe");
+		GameRegistry.registerItem(fishAxe, "fish_axe");
+		GameRegistry.registerItem(fishSpade, "fish_spade");
+		GameRegistry.registerItem(fishHoe, "fish_hoe");
+		
+		GameRegistry.registerItem(salmonSword, "salmon_sword");
+		GameRegistry.registerItem(salmonPickaxe, "salmon_pickaxe");
+		GameRegistry.registerItem(salmonAxe, "salmon_axe");
+		GameRegistry.registerItem(salmonSpade, "salmon_spade");
+		GameRegistry.registerItem(salmonHoe, "salmon_hoe");
+		
+		GameRegistry.registerItem(pufferfishSword, "pufferfish_sword");
+		GameRegistry.registerItem(pufferfishPickaxe, "pufferfish_pickaxe");
+		GameRegistry.registerItem(pufferfishAxe, "pufferfish_axe");
+		GameRegistry.registerItem(pufferfishSpade, "pufferfish_spade");
+		GameRegistry.registerItem(pufferfishHoe, "pufferfish_hoe");
+	}
+}

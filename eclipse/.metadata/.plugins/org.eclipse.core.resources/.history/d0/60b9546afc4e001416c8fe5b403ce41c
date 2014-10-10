@@ -1,0 +1,13 @@
+package io.github.jwolff52.cakemod.item;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
+
+public class ItemSalmonShovel extends ItemCM{
+
+	public ItemSalmonShovel(){
+		super();
+		this.setUnlocalizedName("salmonShovel");
+		this.setHarvestLevel("salmon", 0);
+	}
+}

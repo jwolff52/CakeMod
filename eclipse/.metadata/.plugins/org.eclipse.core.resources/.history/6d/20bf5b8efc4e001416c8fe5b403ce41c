@@ -1,0 +1,14 @@
+package io.github.jwolff52.cakemod.init;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import io.github.jwolff52.cakemod.item.ItemCM;
+import io.github.jwolff52.cakemod.item.ItemSalmonShovel;
+
+public class ModItems {
+
+	public static final ItemCM salmonShovel=new ItemSalmonShovel();
+	
+	public static void init(){
+		GameRegistry.registerItem(salmonShovel, "salmon_shovel");
+	}
+}

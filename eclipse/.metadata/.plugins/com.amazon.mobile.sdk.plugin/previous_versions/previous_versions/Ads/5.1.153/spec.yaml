@@ -1,0 +1,25 @@
+name: Mobile Ads
+version: 5.1.153
+minApiLevel: 4
+minPluginVersion: 1.0.0
+features: 
+  - name: core
+    optional: false
+    libs:
+      - jar: amazon-ads-5.1.153.jar
+        bundled: true
+    xmlEntries:
+      - parent: manifest
+        elements:
+          - <uses-permission android:name="android.permission.INTERNET" />
+      - parent: application
+        elements:
+          - <activity android:name="com.amazon.device.ads.AdActivity" android:configChanges="keyboardHidden|orientation|screenSize" />
+  - name: Include Recommended Targeting Permissions
+    xmlEntries:
+      - parent: manifest
+        elements:
+          - <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+          - <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+          - <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+          - <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />

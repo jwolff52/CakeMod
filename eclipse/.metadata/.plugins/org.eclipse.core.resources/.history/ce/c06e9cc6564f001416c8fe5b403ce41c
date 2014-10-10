@@ -1,0 +1,18 @@
+package io.github.jwolff52.cakemod.init;
+
+import io.github.jwolff52.cakemod.item.tools.ItemPufferfishAxe;
+import io.github.jwolff52.cakemod.item.tools.ItemSalmonShovel;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemSpade;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemSpade salmonShovel=new ItemSalmonShovel();
+	public static final ItemAxe pufferfishAxe=new ItemPufferfishAxe();
+	
+	public static void init(){
+		GameRegistry.registerItem(salmonShovel, "salmon_shovel");
+		GameRegistry.registerItem(pufferfishAxe, "pufferfish_axe");
+	}
+}

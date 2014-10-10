@@ -1,0 +1,36 @@
+package io.github.jwolff52.cakemod.handler;
+
+import io.github.jwolff52.cakemod.ref.Reference;
+
+import java.io.File;
+
+import net.minecraftforge.common.config.Configuration;
+import cpw.mods.fml.client.event.ConfigChangedEvent;
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+
+public class ConfigurationHandler {
+	
+	public static Configuration configuration;
+	public static boolean testValue=false;
+	
+	public static void init(File configFile){
+		if(configuration == null){
+			configuration=new Configuration(configFile);
+		}
+	}
+	
+	@SubscribeEvent
+	public void onConfigurationChangedEvent(ConfigChangedEvent e){
+		if(e.modID.equalsIgnoreCase(Reference.MOD_ID)){
+			loadConfiguration();
+		}
+	}
+	
+	public void loadConfiguration(){
+		configuration.load();
+		testValue = configuration.getBoolean("configValue", Configuration.CATEGORY_GENERAL, false, "This is an example config value");
+		if(configuration.hasChanged()){
+			configuration.save();
+		}
+	}
+}

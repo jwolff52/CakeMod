@@ -1,0 +1,13 @@
+package io.github.jwolff52.cakemod.item;
+
+import net.minecraft.item.ItemSpade;
+
+public class ItemSalmonShovel extends ItemSpade{
+
+	
+	public ItemSalmonShovel(){
+		super();
+		this.setUnlocalizedName("salmonShovel");
+		this.setHarvestLevel("salmon", 0);
+	}
+}

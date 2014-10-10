@@ -1,0 +1,22 @@
+# Mobile Associates properties
+name: Mobile Associates
+version: 1.0.45
+minApiLevel: 10
+minPluginVersion: 1.0.0
+features:
+  - name: core
+    optional: false
+    # API Library to include
+    libs: 
+      - jar: amazon-mobile-associates-1.0.45.0.jar
+        bundled: true
+    # Required AndroidManifest.xml entries
+    xmlEntries:
+      - parent: manifest
+        elements:
+          - <uses-permission android:name="android.permission.INTERNET" />
+  - name: Configure AndroidManifest.xml for testing with Amazon App Tester (Uncheck this before releasing your app)
+    xmlEntries:
+      - parent: manifest
+        elements:
+          - <meta-data android:name="com.amazon.device.associates.ENABLE_TESTING" android:value="true"/>

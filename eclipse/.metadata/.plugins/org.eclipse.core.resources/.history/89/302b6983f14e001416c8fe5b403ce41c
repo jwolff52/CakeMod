@@ -1,0 +1,14 @@
+package io.github.jwolff52.cakemod.util;
+
+import io.github.jwolff52.cakemod.ref.Reference;
+
+import java.util.logging.Level;
+
+import cpw.mods.fml.common.FMLLog;
+
+public class LogHelper {
+
+	public static void log(Level logLevel, Object object){
+		FMLLog.log(Reference.MOD_NAME, logLevel, "%s", object, new Object());
+	}
+}

@@ -1,0 +1,14 @@
+package io.github.jwolff52.cakemod.init;
+
+import io.github.jwolff52.cakemod.item.ItemSalmonShovel;
+import net.minecraft.item.ItemSpade;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemSpade salmonShovel=new ItemSalmonShovel();
+	
+	public static void init(){
+		GameRegistry.registerItem(salmonShovel, "salmon_shovel");
+	}
+}

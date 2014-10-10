@@ -1,0 +1,9 @@
+package io.github.jwolff52.cakemod.item;
+
+public class ItemSalmonShovel extends ItemCM{
+
+	public ItemSalmonShovel(){
+		super();
+		this.setUnlocalizedName("salmonShovel");
+	}
+}

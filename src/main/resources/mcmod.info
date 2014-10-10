@@ -1,0 +1,21 @@
+[
+{
+  "modid": "CakeMod",
+  "name": "Cake Mod",
+  "description": "A collection of request made by cake_buster, namely fish tools!",
+  "version": "1.0",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "jwolff52","cake_buster"
+  ],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent": "",
+  "dependencies": [
+  ]
+}
+]  

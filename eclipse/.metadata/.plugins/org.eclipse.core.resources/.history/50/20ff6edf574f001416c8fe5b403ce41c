@@ -1,0 +1,38 @@
+package io.github.jwolff52.cakemod.init;
+
+import io.github.jwolff52.cakemod.item.tools.ItemPufferfishAxe;
+import io.github.jwolff52.cakemod.item.tools.ItemSalmonShovel;
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishAxe;
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishHoe;
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishPickaxe;
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishSpade;
+import io.github.jwolff52.cakemod.item.tools.fish.ItemFishSword;
+import net.minecraft.item.ItemAxe;
+import net.minecraft.item.ItemHoe;
+import net.minecraft.item.ItemPickaxe;
+import net.minecraft.item.ItemSpade;
+import net.minecraft.item.ItemSword;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class ModItems {
+
+	public static final ItemSword fishSword=new ItemFishSword();
+	public static final ItemPickaxe fishPickaxe=new ItemFishPickaxe();
+	public static final ItemAxe fishAxe=new ItemFishAxe();
+	public static final ItemSpade fishSpade=new ItemFishSpade();
+	public static final ItemHoe fishHoe=new ItemFishHoe();
+	
+	public static final ItemSpade salmonShovel=new ItemSalmonShovel();
+	public static final ItemAxe pufferfishAxe=new ItemPufferfishAxe();
+	
+	public static void init(){
+		GameRegistry.registerItem(fishSword, "fish_sword");
+		GameRegistry.registerItem(fishPickaxe, "fish_pickaxe");
+		GameRegistry.registerItem(fishAxe, "fish_axe");
+		GameRegistry.registerItem(fishSpade, "fish_spade");
+		GameRegistry.registerItem(fishHoe, "fish_hoe");
+		
+		GameRegistry.registerItem(salmonShovel, "salmon_shovel");
+		GameRegistry.registerItem(pufferfishAxe, "pufferfish_axe");
+	}
+}

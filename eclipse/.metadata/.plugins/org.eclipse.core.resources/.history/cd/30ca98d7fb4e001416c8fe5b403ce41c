@@ -1,0 +1,21 @@
+package io.github.jwolff52.cakemod.item;
+
+import net.minecraft.block.Block;
+import net.minecraft.item.ItemStack;
+
+public class ItemSalmonShovel extends ItemCM{
+
+	public ItemSalmonShovel(){
+		super();
+		this.setUnlocalizedName("salmonShovel");
+		this.setHarvestLevel("salmon", 0);
+	}
+	
+	@Override
+	public boolean canHarvestBlock(Block par1Block, ItemStack itemStack) {
+		if(par1Block.getHarvestTool(0).equalsIgnoreCase("spade")){
+			return true;
+		}
+		return super.canHarvestBlock(par1Block, itemStack);
+	}
+}

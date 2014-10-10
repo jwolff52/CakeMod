@@ -1,0 +1,13 @@
+package io.github.jwolff52.cakemod.init;
+
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemFishFood;
+import net.minecraft.item.ItemStack;
+import cpw.mods.fml.common.registry.GameRegistry;
+
+public class Recipies {
+
+	public static void init(){
+		GameRegistry.addRecipe(new ItemStack(ModItems.fishAxe), "pp ", "ps ", " s ", 'p', new ItemStack(Items.fish, 1, ItemFishFood.FishType.PUFFERFISH.func_150976_a()), 's', Items.stick);
+	}
+}
